@@ -24,8 +24,7 @@ class PicturesController < ApplicationController
   	p.source = params["source"]
   	p.caption = params["caption"]
   	p.save
-
-  	#redirect_to("http://localhost:3000/all_pictures")
+	redirect_to("http://localhost:3000/all_pictures")
 
   end
 end
