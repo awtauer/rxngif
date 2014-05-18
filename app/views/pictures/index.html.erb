@@ -4,7 +4,9 @@
 
 	<% Picture.all.each do |photo| %>
 
-	  <li><%= photo.source %></li>
+	  <li>
+	  <img src = "<%= photo.source %>" alt="gif" width ="200"></li>
+
 
 	  <% end %>
 
