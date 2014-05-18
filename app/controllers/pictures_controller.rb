@@ -17,5 +17,15 @@ class PicturesController < ApplicationController
 
   def create
 
+  	#ruby to receive the form data, create a new row, assign attributes based on form data & save it
+  	#show something in the view to confirm
+
+  	p = Picture.new
+  	p.source = params["source"]
+  	p.caption = params["caption"]
+  	p.save
+
+  	#redirect_to("http://localhost:3000/all_pictures")
+
   end
 end
